@@ -4,7 +4,7 @@ const assertEqual = require('./assertEqual');
 
 const tail = arrayTest => {
   arrayTest.shift();
-  return arrayTest.test;
+  return arrayTest;
 };
 
 
