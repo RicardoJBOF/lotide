@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@ricardojbof/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Learning at Lighthouse and building my lotide dictionary",
   "main": "Backup.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/RicardoJBOF/lotide.git"
   },
-  "author": "",
+  "author": "Ricardo Barbosa",
+  "contact": "https://www.linkedin.com/in/barbosa-ricardo/",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RicardoJBOF/lotide/issues"
@@ -22,5 +23,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.1.1"
+  },
+  "dependencies": {
+    "my-package": "0.0.0"
   }
 }

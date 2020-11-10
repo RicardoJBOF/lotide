@@ -77,5 +77,6 @@ const cd2 = {
   d: ["2", 3, 4]
 };
 
+module.exports = eqObjects;
 
-console.log(eqObjects(cd, cd2));
+//console.log(eqObjects(cd, cd2));

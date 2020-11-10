@@ -30,9 +30,10 @@ const eqArrays = function(actual, expected) {
 
 
 const letterPositions = function(sentence) {
-  const results = {};
-  for (let position in sentence) {
 
+  const results = {};
+  
+  for (let position in sentence) { 
 
     const letter = sentence[position];
 
@@ -54,8 +55,9 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
 
-console.log(letterPositions("lighthouse in the house"));
+//console.log(letterPositions("lighthouse in the house"));
 
 /*{ 
   l: [0],

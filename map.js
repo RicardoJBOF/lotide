@@ -31,9 +31,11 @@ const results1 = map(words, word => word[0]);
 
 const test1 = [1,2,3];
 
-console.log(assertArrayEqual(test1.map(x => x*10),[10,20,30]))
+module.exports = map;
 
-console.log(assertArrayEqual(map(test1,x => x*10),[10,20,30]))
+// console.log(assertArrayEqual(test1.map(x => x*10),[10,20,30]))
+
+// console.log(assertArrayEqual(map(test1,x => x*10),[10,20,30]))
 
 
 

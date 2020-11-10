@@ -36,6 +36,8 @@ const assertObjectsEqual = function(actual, expected) {
 
 };
 
+module.exports = assertObjectsEqual;
+
 // TEST CODE
 
 const ab = {
@@ -65,4 +67,4 @@ const cd2 = {
 };
 
 
-assertObjectsEqual(cd, cd2);
+//assertObjectsEqual(cd, cd2);

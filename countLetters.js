@@ -35,8 +35,10 @@ const countLetters = function(arrayTest) {
 
   return result;
 
-}
+};
 
-console.log(countLetters("hello"));
+module.exports = countLetters;
+
+//console.log(countLetters("hello"));
 
 // TEST CODE
