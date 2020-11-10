@@ -6,7 +6,7 @@ const eqArrays = (actual, expected) => {
   if (actual.length !== expected.length) return false;
 
   for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) return false;
+    if (actual[i] !== expected[i]) { return false};
   }
 
   return true;
@@ -19,8 +19,5 @@ const eqArrays = (actual, expected) => {
 // console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])) // => false
 // assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 
-
 //EXPORT FILE
 module.exports = eqArrays;
-
-
