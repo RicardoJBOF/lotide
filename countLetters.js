@@ -1,44 +1,17 @@
+//IMPORT FILE
+const assertEqual = require("./assertEqual");
+
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-
-  if (actual === expected) {
-    
-    console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`);
-  
-  } else {
-
-    console.log(`🔴🔴🔴 Assertion Failed ${actual} !== ${expected}`);
-
-  }
-
-
-};
-
-const countLetters = function(arrayTest) {
-
+const countLetters = function (array) {
   const result = {};
-
-  for (let letters of arrayTest){
-
-      if (result[letters]){
-
-        result[letters]++
-        
-      } else {
-
-        result[letters] = 1;
-
-      }
-      
-
+  for (const letter of array) {
+    result[letter] ? result[letter]++ : (result[letter] = 1);
   }
-
   return result;
-
 };
-
-module.exports = countLetters;
-
-//console.log(countLetters("hello"));
 
 // TEST CODE
+//console.log(countLetters("hello"));
+
+//EXPORT FILE
+module.exports = countLetters;
