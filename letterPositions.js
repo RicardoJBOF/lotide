@@ -1,64 +1,21 @@
+//IMPORT FILE
+const assertArraysEqual = require("./assertArraysEqual");
+
 // FUNCTION IMPLEMENTATION
-const assertArraysEqual = function(actual, expected) {
-
-  if (eqArrays) {
-    
-    console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`);
-  
-  } else {
-
-    console.log(`🔴🔴🔴 Assertion Failed ${actual} !== ${expected}`);
-
-  }
-
-
-};
-
-
-const eqArrays = function(actual, expected) {
-
-  if (actual.toString() === expected.toString()) {
-
-    return true;
-
-  } else {
-
-    return false;
-  }
-
-};
-
-
-const letterPositions = function(sentence) {
-
-  const results = {};
-  
-  for (let position in sentence) { 
-
+const letterPositions = function (sentence) {
+  const result = {};
+  for (const position in sentence) {
     const letter = sentence[position];
-
-    if(results[letter]){
-      
-      results[letter].push(position);
-
-    } else {
-      
-      if(letter !== ' ') {
-
-        results[letter] = [position];
-
-      }
-
-    }
+    result[letter]
+      ? result[letter].push(position)
+      : (result[letter] = [position]);
   }
-
-  return results;
+  return result;
 };
 
-module.exports = letterPositions;
-
-//console.log(letterPositions("lighthouse in the house"));
-
+// TEST CODE
+// console.log(letterPositions("lighthouse in the house"));
+//answer:
 /*{ 
   l: [0],
   i: [1, 11],
@@ -72,4 +29,5 @@ module.exports = letterPositions;
   n: [12]
 } */
 
-//assertArraysEqual(letterPositions("hello").e, [1]);
+//EXPORT FILE
+module.exports = letterPositions;
