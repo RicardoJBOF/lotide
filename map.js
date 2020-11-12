@@ -1,41 +1,32 @@
+//IMPORT FILE
+const eqObjects = require("./eqObjects");
+const assertArraysEqual = require("./assertArraysEqual");
+
 // FUNCTION IMPLEMENTATION
-const assertArrayEqual = function(actual, expected) {
-  if (eqArrays) {
-    console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴🔴🔴 Assertion Failed ${actual} !== ${expected}`);
-  }
-};
-
-const eqArrays = function(actual, expected) {
-  if (actual.toString() === expected.toString()) {
-    return true;
-  } else {
-    return false;
-  }
-};
-
 const words = ["ground", "control", "to", "major", "tom"];
 
-const map = function(array, callback) {
-  const results = [];
+const map = (array, callback) => {
+  const result = [];
   for (let item of array) {
-    results.push(callback(item));
+    result.push(callback(item));
   }
-  return results;
-}
+  return result;
+};
 
-const results1 = map(words, word => word[0]);
+// TEST CODE
 
-//console.log(results1);
+// const test1 = map(words, (word) => word[0]);
+// console.log(test1);
 
-const test1 = [1,2,3];
+// const test2 = [1, 2, 3];
+// assertArraysEqual(
+//   test2.map((x) => x * 10),
+//   [10, 20, 30]
+// );
+// assertArraysEqual(
+//   map(test2, (x) => x * 10),
+//   [10, 20, 30]
+// );
 
+//EXPORT FILE
 module.exports = map;
-
-// console.log(assertArrayEqual(test1.map(x => x*10),[10,20,30]))
-
-// console.log(assertArrayEqual(map(test1,x => x*10),[10,20,30]))
-
-
-
