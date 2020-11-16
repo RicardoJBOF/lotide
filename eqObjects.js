@@ -13,6 +13,10 @@ const eqObjects = (object1, object2) => {
         if (!eqArrays(object1[key], object2[key])) {
           return false;
         }
+      } else if (typeof object1[key] === "object") {
+        if (!eqObjects(object1[key], object2[key])) {
+          return false;
+        }
       } else {
         if (!object1[key] === object2[key]) {
           return false;
@@ -52,6 +56,10 @@ const cd2 = {
 
 // console.log(eqObjects(cd, cd2));
 // console.log(eqObjects(ab, ba));
+
+console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => true
+console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => false
+console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); // => false
 
 //EXPORT FILE
 module.exports = eqObjects;
