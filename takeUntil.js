@@ -12,8 +12,8 @@ const takeUntil = (array, callback) => {
 };
 
 // TEST CODE
-const data = [1, 2, 5, 7, 2, -1, 2, 4, 5];
-console.log(takeUntil(data, (x) => x < 0));
+// const data = [1, 2, 5, 7, 2, -1, 2, 4, 5];
+// console.log(takeUntil(data, (x) => x < 0));
 
 //EXPORT FILE
 module.exports = takeUntil;
