@@ -1,7 +1,3 @@
-//IMPORT FILE
-const eqArrays = require("./eqArrays");
-const assertArraysEqual = require("./assertArraysEqual");
-
 // FUNCTION IMPLEMENTATION
 const flatten = (array) => {
   const answer = [];
@@ -15,12 +11,8 @@ const flatten = (array) => {
       }
     }
   }
-
   return answer;
 };
-
-//TEST CODE
-//console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
 
 //EXPORT FILE
 module.exports = flatten;

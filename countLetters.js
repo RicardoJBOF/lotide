@@ -1,6 +1,3 @@
-//IMPORT FILE
-const assertEqual = require("./assertEqual");
-
 // FUNCTION IMPLEMENTATION
 const countLetters = function (array) {
   const result = {};
@@ -9,9 +6,6 @@ const countLetters = function (array) {
   }
   return result;
 };
-
-// TEST CODE
-//console.log(countLetters("hello"));
 
 //EXPORT FILE
 module.exports = countLetters;

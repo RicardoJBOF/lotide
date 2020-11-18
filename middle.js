@@ -1,7 +1,3 @@
-//IMPORT FILE
-const eqArrays = require("./eqArrays");
-const assertArraysEqual = require('./assertArraysEqual');
-
 // FUNCTION IMPLEMENTATION
 const middle = middleArray => {
   let middleArrayAnswer = [];

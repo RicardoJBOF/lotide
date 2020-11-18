@@ -1,7 +1,3 @@
-//IMPORT FILE
-const eqArrays = require("./eqArrays");
-const assertArraysEqual = require("./assertArraysEqual");
-
 // FUNCTION IMPLEMENTATION
 const without = (source, itemsToRemove) => {
   let answer = source;
@@ -14,12 +10,6 @@ const without = (source, itemsToRemove) => {
   }
   return answer;
 };
-
-//TEST CODE
-// console.log(without([1, 2, 3], [1])) // => [2, 3]
-// console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
-// assertArraysEqual(without([1, 2, 3], [1]),[2, 3]);
-// assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"])
 
 //EXPORT FILE
 module.exports = without;

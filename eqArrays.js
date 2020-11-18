@@ -1,6 +1,3 @@
-//IMPORT FILE
-const assertEqual = require("./assertEqual");
-
 // FUNCTION IMPLEMENTATION
 const eqArrays = (actual, expected) => {
   let answer = true;
