@@ -1,8 +1,20 @@
-//const eqArrays = require('../eqArrays');
-// const assertEqual = require('../assertEqual')
-const assertArraysEqual = require('../assertArraysEqual');
+//IMPORT FILE
+const assert = require("chai").assert;
+const assertArraysEqual = require("../assertArraysEqual");
 
-assertArraysEqual([1, 2, 3], [1, 2, 3])
+//TEST
+describe("#assertArraysEqual", () => {
+  it("returns pass for [1, 2, 3], [1, 2, 3]", () => {
+    assert.strictEqual(
+      assertArraysEqual([1, 2, 3], [1, 2, 3]),
+      `🟢🟢🟢 Assertion Passed: 1,2,3 === 1,2,3`
+    );
+  });
 
-module.exports = assertArraysEqual; 
-
+  it('returns fail for [1, 2, 3], [1, 2, "3"]', () => {
+    assert.strictEqual(
+      assertArraysEqual([1, 2, 3], [1, 2, "3"]),
+      `🔴🔴🔴 Assertion Failed 1,2,3 !== 1,2,3`
+    );
+  });
+});
