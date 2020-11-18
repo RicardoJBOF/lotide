@@ -30,10 +30,10 @@ The following functions are currently implemented:
 - `function(assertObjectsEqual)`: Compare objects.
 - `function(countLetters)`: Count number of letters.
 - `function(countOnly)`: Count specific value.
-- `function(eqArrays)`: Compare if objects are equal or not.
+- `function(eqArrays)`: Compare if arrays are equal or not.
 - `function(eqObjects)`: Compare if objects are equal or not.
 - `function(findKey)`: Find key.
-- `function(findKeyByValue)`: Fin key by value.
+- `function(findKeyByValue)`: Find key by value.
 - `function(flatten)`: Transform a nested array in a flatten one.
 - `function(head)`: Get first element of an array.
 - `function(letterPositions)`: Position of an element in a string.
